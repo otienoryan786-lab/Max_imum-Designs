@@ -29,7 +29,7 @@
   var form = $('#quote');
   function msg() {
     var f = new FormData(form);
-    return 'Hello Max_imum Designs! I would like a quote.\n\nName: ' + f.get('name') + '\nBusiness: ' + f.get('biz') + '\nService: ' + f.get('service') + '\nDeadline: ' + (f.get('deadline') || 'flexible') + '\nDetails: ' + (f.get('details') || '-');
+    return 'Hello Max_imum Designs! I would like a quote.\n\nName: ' + f.get('name') + '\nBusiness: ' + f.get('biz') + '\nService: ' + f.get('service') + '\nDeadline: ' + (f.get('deadline') || 'flexible') + '\nHeard about us from: ' + (f.get('source') || '-') + '\nDetails: ' + (f.get('details') || '-');
   }
   form.addEventListener('submit', function (e) { e.preventDefault(); window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg()), '_blank', 'noopener'); });
   $('#emailbtn').addEventListener('click', function () { if (!form.reportValidity()) return; location.href = 'mailto:maxthompson786@gmail.com?subject=' + encodeURIComponent('Quote request') + '&body=' + encodeURIComponent(msg()); });
