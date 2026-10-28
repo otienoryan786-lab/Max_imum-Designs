@@ -36,6 +36,17 @@ You can write this file with the Update Business Details tool in the toolkit (fo
 - `js/portfolio.js` draws the page from that data. You should not need to edit it.
 - `downloads/Max_imum_Designs_Portfolio_2026.pdf` is the PDF portfolio. Replace it when you update the portfolio.
 
+## Promotional campaign
+- `campaign.html` presents the launch posts, Instagram carousels, story/highlight graphics, launch reel and print PDFs in `Max_imum_Promotional_Materials/11_Promotional_Materials/`.
+- `campaign.js` builds the downloadable galleries from those existing assets. Keep the filenames and folder structure in sync if you replace campaign files.
+- The editable PSDs, campaign playbook and copy-and-paste messages remain source materials and are not exposed in the public gallery.
+
+## Search visibility (SEO)
+- The home page targets graphic design searches in Nairobi and Kenya; `services.html` has useful detail for the actual logo, branding, social, print, presentation and document services.
+- Public pages have descriptive titles, summaries, canonical URLs and social sharing metadata. `robots.txt` allows crawling and points to `sitemap.xml`, which lists the main pages.
+- After publishing, add the site in Google Search Console, verify the site using the method it provides, submit `https://otienoryan786-lab.github.io/Max_imum-Designs/sitemap.xml`, and request indexing for the home and services pages. Search engines decide when and where to show pages; rankings cannot be guaranteed.
+- Keep service descriptions, prices, contact details, portfolio examples and business information accurate and updated. If eligible, create and maintain a Google Business Profile for Nairobi; never add a fake address or reviews.
+
 ## Open it in your code editor (VS Code)
 1. Unzip the project and open the folder in VS Code (File > Open Folder).
 2. Install the recommended extension **Live Server** when VS Code asks (or from the Extensions tab).
