@@ -40,5 +40,18 @@
   var lb = $('.lb'), lbi = $('.lb img');
   document.querySelectorAll('.work figure').forEach(function (f) { f.tabIndex = 0; var open = function () { lbi.src = f.querySelector('img').src; lbi.alt = f.querySelector('img').alt; lb.classList.add('on'); }; f.addEventListener('click', open); f.addEventListener('keydown', function (e) { if (e.key === 'Enter') open(); }); });
   lb.addEventListener('click', function () { lb.classList.remove('on'); }); document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lb.classList.remove('on'); });
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var revealItems = document.querySelectorAll('main section .card, main section .work figure, .campaign-preview a, .steps > div, .score, .about img, #faq details');
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -24px 0px' });
+    revealItems.forEach(function (el) { el.classList.add('reveal'); observer.observe(el); });
+    document.body.classList.add('motion-ready');
+  }
   $('#yr').textContent = new Date().getFullYear();
 })();
