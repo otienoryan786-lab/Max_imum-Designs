@@ -41,6 +41,11 @@ You can write this file with the Update Business Details tool in the toolkit (fo
 - `campaign.js` builds the downloadable galleries from those existing assets. Keep the filenames and folder structure in sync if you replace campaign files.
 - The editable PSDs, campaign playbook and copy-and-paste messages remain source materials and are not exposed in the public gallery.
 
+## Free website tools
+- `brand-health-check.html` is a private, in-browser 20-question self-assessment. Its printable PDF is in `downloads/`.
+- `playground.html` includes a logo-style preview and a quote builder. The builder uses the prices in `prices.js`, so it stays aligned with the homepage and quote form.
+- Both tools run in the visitor's browser; details are shared only if they choose to open and send a WhatsApp message.
+
 ## Search visibility (SEO)
 - The home page targets graphic design searches in Nairobi and Kenya; `services.html` has useful detail for the actual logo, branding, social, print, presentation and document services.
 - Public pages have descriptive titles, summaries, canonical URLs and social sharing metadata. `robots.txt` allows crawling and points to `sitemap.xml`, which lists the main pages.
