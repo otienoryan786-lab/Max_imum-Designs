@@ -46,6 +46,11 @@ You can write this file with the Update Business Details tool in the toolkit (fo
 - `playground.html` includes a logo-style preview and a quote builder. The builder uses the prices in `prices.js`, so it stays aligned with the homepage and quote form.
 - Both tools run in the visitor's browser; details are shared only if they choose to open and send a WhatsApp message.
 
+## Max studio guide
+- Max is the site's rules-based chat guide. It can answer common questions from the published site, point visitors to services, prices, policies and tools, and prepare a project brief for WhatsApp.
+- Chat content stays in the browser and is not stored or sent unless the visitor chooses a contact link. Max is not a live generative AI and cannot create designs, submit forms or book work.
+- The site is static and has no AI backend. Connecting a live AI model or business systems requires a server-side integration; never put private API keys in browser code.
+
 ## Search visibility (SEO)
 - The home page targets graphic design searches in Nairobi and Kenya; `services.html` has useful detail for the actual logo, branding, social, print, presentation and document services.
 - Public pages have descriptive titles, summaries, canonical URLs and social sharing metadata. `robots.txt` allows crawling and points to `sitemap.xml`, which lists the main pages.

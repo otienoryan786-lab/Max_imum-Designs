@@ -120,7 +120,7 @@
   }
   window.Max = { create: create, say: say, confetti: confetti, runWelcome: runWelcome, applyNeed: applyNeed, price: price, fmt: fmt, wl: wl, dotCanvas: dotCanvas };
   document.addEventListener('DOMContentLoaded', function () {
-    var m = /need=(\w+)/.exec(location.search); var shown = overlay(); hero(); if (!$('#welcomeHost')) widget();
+    var m = /need=(\w+)/.exec(location.search); var shown = overlay(); hero(); if (!$('#welcomeHost') && !window.MaxChat) widget();
     if (m && TAB[m[1]]) setTimeout(function () { applyNeed(m[1]); }, 200);
     var host = $('#welcomeHost'); if (host) runWelcome(host, { finish: function (need, url) { location.href = url && url !== 'index.html' ? url : 'index.html'; } });
   });
