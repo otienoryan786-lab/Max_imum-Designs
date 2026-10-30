@@ -1,5 +1,79 @@
 (function () {
   var root = 'Max_imum_Promotional_Materials/11_Promotional_Materials/';
+  var promoRoot = 'MaxImum_Promo_Batch_2/promo/png/';
+  var promoSlides = [
+    'MaxImum_C3_Slide_0_Cover.png',
+    'MaxImum_C3_Slide_1.png',
+    'MaxImum_C3_Slide_2.png',
+    'MaxImum_C3_Slide_3.png',
+    'MaxImum_C3_Slide_4.png',
+    'MaxImum_C3_Slide_5.png',
+    'MaxImum_C3_Slide_6_CTA.png'
+  ];
+  var promoPosts = [
+    ['MaxImum_N01_Salon_Feed.png', 'Salon brand, feed and price list'],
+    ['MaxImum_N02_Sign_Menu_Feed.png', 'Sign, menu and posts'],
+    ['MaxImum_N03_Monthly_Design.png', 'Monthly design plans'],
+    ['MaxImum_N04_Tip_Three_Colours.png', 'Design tip: three colours'],
+    ['MaxImum_N05_Client_Words_TEMPLATE.png', 'Client words testimonial template'],
+    ['MaxImum_N06_Ask_Max.png', 'Ask Max: the website guide']
+  ];
+  var promoPostTarget = document.getElementById('promo-posts');
+  promoPosts.forEach(function (post) {
+    var path = promoRoot + post[0];
+    var card = document.createElement('figure');
+    card.className = 'asset-card promo-post';
+    var preview = document.createElement('a');
+    preview.href = path;
+    preview.setAttribute('aria-label', 'Open ' + post[1]);
+    var image = document.createElement('img');
+    image.src = path;
+    image.alt = post[1] + ' — Max_imum Designs social artwork';
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    preview.appendChild(image);
+    var caption = document.createElement('figcaption');
+    var title = document.createElement('b');
+    title.textContent = post[1];
+    caption.appendChild(title);
+    if (post[0] === 'MaxImum_N05_Client_Words_TEMPLATE.png') {
+      var notice = document.createElement('p');
+      notice.className = 'promo-template-note';
+      notice.textContent = 'Template only. Publish a client testimonial only with their written permission.';
+      caption.appendChild(notice);
+    }
+    var download = document.createElement('a');
+    download.className = 'download-link';
+    download.href = path;
+    download.download = post[0];
+    download.textContent = 'Download PNG';
+    caption.appendChild(download);
+    card.appendChild(preview);
+    card.appendChild(caption);
+    promoPostTarget.appendChild(card);
+  });
+
+  var promoImage = document.getElementById('promo-slide-image');
+  var promoCount = document.getElementById('promo-slide-count');
+  var promoDownload = document.getElementById('promo-slide-download');
+  var promoSlide = 0;
+  function showPromoSlide(index) {
+    promoSlide = (index + promoSlides.length) % promoSlides.length;
+    var file = promoSlides[promoSlide];
+    var number = promoSlide + 1;
+    promoImage.src = promoRoot + file;
+    promoImage.alt = 'How to brief a designer in five lines, slide ' + number + ' of ' + promoSlides.length;
+    promoCount.textContent = 'Slide ' + number + ' of ' + promoSlides.length;
+    promoDownload.href = promoRoot + file;
+    promoDownload.download = file;
+  }
+  document.getElementById('promo-prev').addEventListener('click', function () {
+    showPromoSlide(promoSlide - 1);
+  });
+  document.getElementById('promo-next').addEventListener('click', function () {
+    showPromoSlide(promoSlide + 1);
+  });
+
   function slideFiles(prefix, count, cta) {
     var files = [prefix + '_Slide_0_Cover.png'];
     for (var i = 1; i < count; i++) files.push(prefix + '_Slide_' + i + (i === count - 1 && cta ? '_CTA' : '') + '.png');

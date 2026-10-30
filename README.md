@@ -39,6 +39,7 @@ You can write this file with the Update Business Details tool in the toolkit (fo
 ## Promotional campaign
 - `campaign.html` presents the launch posts, Instagram carousels, story/highlight graphics, launch reel and print PDFs in `Max_imum_Promotional_Materials/11_Promotional_Materials/`.
 - `campaign.js` builds the downloadable galleries from those existing assets. Keep the filenames and folder structure in sync if you replace campaign files.
+- The campaign page also features the interactive “How to brief a designer in 5 lines” carousel and downloadable social graphics and captions from `MaxImum_Promo_Batch_2/promo/`. The client-words graphic is a template and must only be published as a testimonial with the client's written permission.
 - The editable PSDs, campaign playbook and copy-and-paste messages remain source materials and are not exposed in the public gallery.
 
 ## Free website tools

@@ -117,6 +117,16 @@ footer{background:var(--ink);color:var(--lilac);padding:40px 0;font-size:14px}fo
 .campaign-preview span{position:absolute;inset:auto 0 0;padding:34px 16px 14px;background:linear-gradient(transparent,rgba(14,11,36,.9));font-weight:700}
 .campaign-link{margin:24px 0 0}
 .campaign-subhead{margin:32px 0 14px;font-size:20px}
+.promo-carousel{max-width:680px;margin:0 auto 48px;padding:20px;background:#fff;border:1px solid var(--lilac);border-radius:var(--r);box-shadow:0 16px 40px rgba(14,11,36,.08)}
+.promo-slide-frame{display:grid;place-items:center;overflow:hidden;border-radius:12px;background:var(--ink)}
+.promo-slide-frame img{width:min(100%,420px);max-height:68vh;aspect-ratio:4/5;object-fit:contain}
+.promo-slide-caption{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 2px 8px}
+.promo-slide-caption span{color:var(--slate);font-size:13px;font-weight:600;white-space:nowrap}
+.promo-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.promo-arrow{border:2px solid var(--lilac);border-radius:999px;background:#fff;color:var(--ink);padding:9px 14px;font:inherit;font-weight:600;cursor:pointer}
+.promo-arrow:hover,.promo-arrow:focus-visible{border-color:var(--violet);outline:2px solid var(--violet);outline-offset:2px}
+.promo-post figcaption{height:100%}
+.promo-template-note{margin:0 0 10px;color:var(--slate);font-size:12px}
 .asset-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:18px}
 .asset-card{margin:0;overflow:hidden;border:1px solid var(--lilac);border-radius:var(--r);background:#fff}
 .asset-card>a{display:block;background:var(--ink)}

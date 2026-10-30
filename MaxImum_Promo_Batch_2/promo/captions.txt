@@ -1,0 +1,59 @@
+Max_imum Designs | Promo Batch 2 | Captions and schedule
+Brand rules used: Poppins, Ink / Violet / Lime, one underscore and one lime highlight per layout, prices always stated (KES).
+Contact in every caption: WhatsApp +254 112 816 303 | link in bio.
+
+HASHTAGS (paste under each caption): #MaxImumDesigns #NairobiDesigner #GraphicDesignKenya #LogoDesignKenya #BrandingKenya #SmallBusinessKenya #DesignToTheMax
+
+------------------------------------------------------------
+N01 Salon feed (1080x1350) | Instagram, Facebook, WhatsApp Status
+Your salon looks great. Does your feed? 💇🏾‍♀️
+A logo, a post pack and a price list that look like one brand, so clients recognise you before they walk in.
+Post pack of 5: KES 5,000. Logo from KES 4,500. 2 free revisions (3 for logos). Pay by M-Pesa.
+Send "SALON" on WhatsApp +254 112 816 303 for a free quote.
+
+N02 Sign, menu, posts (1080x1350) | Instagram, Facebook
+Your sign. Your menu. Your posts. One look.
+When your print and your posts match, customers trust you faster.
+Menu (1 to 2 pages): KES 3,500. Banner, roll-up or signage: KES 2,500.
+Tell us what you sell and we will send a clear quote. WhatsApp +254 112 816 303.
+
+N03 Monthly plans (1080x1350) | Instagram, LinkedIn, Facebook
+Design every month. One price.
+Lite KES 8,500: 8 designs, 1 revision round each.
+Growth KES 15,000: 16 designs and 1 print piece, 2 revision rounds.
+Max KES 22,000: 24 designs, 2 print pieces, brand refresh, priority WhatsApp.
+Prices are per month and confirmed in a written quotation. Message "PLAN" to start.
+
+N04 Tip: three colours (1080x1350) | Instagram, Facebook, WhatsApp Status
+Design tip: three colours is enough. 🎨
+Pick three. Use them on your sign, your posts and your receipts. People start to know you before they read your name.
+Save this, then send it to a friend with a business.
+
+N05 Client words TEMPLATE (1080x1350)
+Edit the three [bracketed] lines in source/MaxImum_N05_Client_Words_TEMPLATE.html, then re-export.
+Post it ONLY with the client's written OK (toolkit: 01_Legal_Documents/06_Portfolio_and_Testimonial_Consent_Form).
+Caption: "Asante, [client name]! 💜 [One line about what you made together.] Want the same for your business? WhatsApp +254 112 816 303."
+
+N06 Ask Max (1080x1350) | Instagram, Facebook, WhatsApp Status
+Questions at 10pm? Ask Max.
+Max is the guide on our website. He answers common questions about prices, services and process, then helps you send your brief on WhatsApp. (Max is a built-in helper, not a live person, so for anything custom we reply ourselves.)
+Say hi: link in bio.
+
+C3 Carousel: How to brief a designer in 5 lines (7 slides, 1080x1350) | Instagram, LinkedIn (upload as PDF), Facebook
+How to brief a designer in 5 lines. 📝
+1. What do you sell? 2. Who buys it? 3. Send 3 brands you love. 4. Where will it show up? 5. Deadline and budget.
+Send us your 5 lines on WhatsApp +254 112 816 303. We reply within 2 hours in working hours (Mon to Sat, 8:00 to 18:00) with a clear quote.
+Save this for your next project.
+
+------------------------------------------------------------
+SUGGESTED SCHEDULE (fits the 12-week calendar, Monday 2 Nov start)
+Wed 11 Nov  N04 Tip: three colours (calendar slot: "consistent colours")
+Tue 17 Nov  N01 Salon feed
+Wed 18 Nov  C3 Brief a designer in 5 lines (tip slot)
+Fri 20 Nov  N06 Ask Max
+Tue 24 Nov  N02 Sign, menu, posts
+Mon 30 Nov  N03 Monthly plans (December planning)
+When the first real client agrees  N05 Client words
+Track which post drives the most WhatsApp messages and repeat that format in a new niche.
+
+Check before posting: prices match js/prices.js; the website link matches your live address (change URL in build.py if you move to a .co.ke domain).
