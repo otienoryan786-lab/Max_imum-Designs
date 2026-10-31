@@ -2,6 +2,11 @@
 
 A fast, free, static site (HTML, CSS, JavaScript). No build step.
 
+## Use the site offline
+The website can be installed as a small web app. On GitHub Pages, open it once while online in a modern browser; the service worker saves the main pages, tools, styles, scripts, portfolio images and PDFs on that device. Use the homepage's **Install for offline use** button when your browser offers it, or choose **Install app** / **Add to Home Screen** in the browser menu. To develop locally, use `http://localhost` (service workers do not work from a `file://` URL).
+
+Pages and browser-based tools that have been cached work without a connection, and project-brief and quote answers stay on the device until the visitor chooses to share them. WhatsApp, email, external links, Google Fonts, video and campaign files not previously opened still need internet. Download important campaign PDFs while online. Clear browser storage or private browsing can remove or prevent the offline cache.
+
 ## Put it online with GitHub Pages
 1. Create a new public repository on GitHub, for example `maximum-designs`.
 2. Upload everything inside this folder (index.html, css, js, assets, privacy.html, terms.html, robots.txt, sitemap.xml, .nojekyll).
@@ -19,6 +24,8 @@ A fast, free, static site (HTML, CSS, JavaScript). No build step.
 ## Quote form
 The form opens WhatsApp or email with the message filled in. It does not store anything. For a stored form later, use a form service and update the Privacy Policy.
 
+The home page also has a guided project brief. Visitors can describe their business, goals, service, creative direction, deadline and budget, then review, copy, download or open the brief in WhatsApp. It runs in the browser and does not save or send answers until the visitor chooses an action.
+
 ## Custom domain (later)
 Buy a .co.ke or .ke domain from a KENIC-accredited registrar, add it in Settings > Pages > Custom domain, and add the DNS records GitHub shows.
 
@@ -28,7 +35,7 @@ The site now has these pages: `policies.html` (hub), `privacy.html`, `service-te
 You can write this file with the Update Business Details tool in the toolkit (folder `00_Update_Business_Details`), or edit it directly on GitHub (click the file, then the pencil icon, then Commit).
 
 ### Files to upload for this version (replace the ones in your repository)
-`index.html`, `policies.html`, `privacy.html`, `service-terms.html`, `ai-policy.html`, `terms.html`, `sitemap.xml`, `robots.txt`, `css/style.css`, `js/business-details.js`, `js/details.js`.
+For offline app support, include `manifest.webmanifest`, `sw.js`, `offline.html`, `js/pwa.js` and the updated `details.js`, `index.html`, `style.css` and service pages, as well as the existing pages, scripts and assets.
 
 ## Portfolio (new)
 - `portfolio.html` is the portfolio page: filters, project pop-ups with images and video, a roadmap of what is next, and a download button for the PDF portfolio.

@@ -7,4 +7,10 @@
   if (B.registration_no) parts.push('Registration no. ' + B.registration_no);
   if (B.address) parts.push(B.address);
   document.querySelectorAll('[data-reg]').forEach(function (el) { if (parts.length) el.textContent = parts.join('  ·  '); else el.hidden = true; });
+  if ('serviceWorker' in navigator) {
+    window.siteWorkerRegistration = navigator.serviceWorker.register('./sw.js').catch(function (error) {
+      console.error('Could not register the offline app:', error);
+      return null;
+    });
+  }
 })();
